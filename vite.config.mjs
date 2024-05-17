@@ -15,7 +15,9 @@ export default defineConfig({
       template: { transformAssetUrls }
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#readme
-    Vuetify(),
+    Vuetify(
+      {autoImport: true,}
+    ),
     Components(),
     ViteFonts({
       google: {
@@ -44,4 +46,7 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  base: process.env.NODE_ENV === 'production'
+    ? '/portfolio/'
+    : '/',
 })
