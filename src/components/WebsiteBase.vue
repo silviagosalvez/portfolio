@@ -48,25 +48,11 @@
   import Experience from './Experience.vue'
 
   export default {
-    // Properties returned from data() become reactive state
-    // and will be exposed on `this`.
     data() {
       return {
         tab: null,
-        page: 0, //homepage
-        pageHeading: 'Silvia Gosalvez', //homepage
+        pageHeading: 'Silvia Gosálvez Comunión', //homepage
       }
-    },
-
-    // Methods are functions that mutate state and trigger updates.
-    // They can be bound as event handlers in templates.
-    methods: {
-      changePage(page) {
-        let initialPage = this.page
-        this.page = page;
-        this.$forceUpdate();
-        console.log(`recieved page change from ${initialPage} to page ${page}`)
-      },
     },
 
     components: {

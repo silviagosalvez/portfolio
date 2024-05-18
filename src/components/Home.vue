@@ -12,7 +12,7 @@
                     </v-card-item>
                     <v-card-text>
                         <br/>
-                        Silvia Gosálvez is currently in her fifth year of her Dual Degree in Law and International Relations 
+                        Silvia Gosálvez Comunión is currently in her fifth year of her Dual Degree in Law and International Relations 
                         at IE University in Madrid, her hometown. Most recently, she spent a semester abroad studying at 
                         Northeastern University in Boston. During that time she held a position as an art law intern at 
                         the Volunteer Lawyers for the Arts department in the Arts and Business Council of Greater Boston. 
