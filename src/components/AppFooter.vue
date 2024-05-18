@@ -1,16 +1,16 @@
 <template>
   <v-footer height="40" app>
     <a
-      v-for="item in items"
-      :key="item.title"
-      :href="item.href"
-      :title="item.title"
+      v-for="info in socialMedia"
+      :key="info.title"
+      :href="info.href"
+      :title="info.title"
       class="d-inline-block mx-2 social-link"
       rel="noopener noreferrer"
       target="_blank"
     >
       <v-icon
-        :icon="item.icon"
+        :icon="info.icon"
         :size="24"
         style="color: white;"
       />
@@ -35,7 +35,8 @@
 
 <script setup>
   
-  const items = [
+  // this will make buttons to acceess silvias social media in the footer
+  const socialMedia = [
     {
       title: 'LinkedIn',
       icon: `fa-brands fa-linkedin-in`,
