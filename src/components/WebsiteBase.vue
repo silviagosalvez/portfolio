@@ -18,12 +18,15 @@
               <v-tabs
                   v-model="tab"
                   align-tabs="center"
+                  center-active
                   color="white"
                   height="60"
                   slider-color="white"
                 >
                   <v-tab value="0" :text="'Home'"></v-tab>
                   <v-tab value="1" :text="'Photography'"></v-tab>
+                  <v-tab value="2" :text="'Posts'"></v-tab>
+                  <v-tab value="3" :text="'Experience'"></v-tab>
               </v-tabs>
             </v-col>
             <v-col></v-col>
@@ -33,6 +36,7 @@
     </v-app-bar>
     <Home v-if="tab == 0"/>
     <Photography v-if="tab == 1"/>
+    <Experience v-if="tab == 3"/>
   </v-container>
 </template>
 
@@ -40,6 +44,7 @@
 
   import Home from './Home.vue'
   import Photography from './Photography.vue'
+  import Experience from './Experience.vue'
 
   export default {
     // Properties returned from data() become reactive state
@@ -66,6 +71,7 @@
     components: {
       Home,
       Photography,
+      Experience,
     }
   }
 </script>
