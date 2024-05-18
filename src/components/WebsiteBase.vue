@@ -16,6 +16,7 @@
             <v-col></v-col>
             <v-col class="flex-grow-1 flex-shrink-0" cols="1" style="max-width:fit-content; min-width: fit-content;">
               <v-tabs
+                  show-arrows
                   v-model="tab"
                   align-tabs="center"
                   center-active

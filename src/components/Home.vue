@@ -1,9 +1,9 @@
 
 <template>
-    <v-sheet>
+    <v-sheet style="background-color: #121212;">
         <v-container>
             <v-row>
-                <v-card>
+                <v-card style="background-color: #121212;">
                     <v-card-item>
                         <v-img 
                             style="max-height: 50vh;"

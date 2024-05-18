@@ -1,13 +1,9 @@
 <template>
-    <v-row>
+    <v-row v-for="experience in experiences"
+            :key="experience.company">
         <v-col
-            v-for="experience in experiences"
-            :key="experience.company"
-            cols="12"
-            md="6"
-            sm="fit"
             align-self="center">
-            <v-card>
+            <v-card align-center align-self="center">
                 <v-card-title class="d-flex align-center">
                     {{ experience.company }}
                 </v-card-title>
