@@ -12,6 +12,7 @@
       <v-icon
         :icon="item.icon"
         :size="24"
+        style="color: white;"
       />
     </a>
     <div
@@ -37,12 +38,12 @@
   const items = [
     {
       title: 'LinkedIn',
-      icon: `mdi-account-box`,
+      icon: `fa-brands fa-linkedin-in`,
       href: 'https://www.linkedin.com/in/silviagosalvezcomunion/',
     },
     {
       title: 'Instagram',
-      icon: 'mdi-camera',
+      icon: 'fa-brands fa-instagram',
       href: 'https://www.instagram.com/silviagcva/',
     },
   ]

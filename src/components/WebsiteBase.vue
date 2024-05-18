@@ -20,10 +20,10 @@
                   align-tabs="center"
                   color="white"
                   height="60"
-                  slider-color="#f78166"
+                  slider-color="white"
                 >
-                  <v-tab>Home</v-tab>
-                  <v-tab>Photography</v-tab>
+                  <v-tab value="0" :text="'Home'"></v-tab>
+                  <v-tab value="1" :text="'Photography'"></v-tab>
               </v-tabs>
             </v-col>
             <v-col></v-col>
@@ -31,20 +31,24 @@
         </v-container>  
       </template>
     </v-app-bar>
+    <Home v-if="tab == 0"/>
+    <Photography v-if="tab == 1"/>
   </v-container>
 </template>
 
 <script>
 
   import Home from './Home.vue'
+  import Photography from './Photography.vue'
 
   export default {
     // Properties returned from data() become reactive state
     // and will be exposed on `this`.
     data() {
       return {
+        tab: null,
         page: 0, //homepage
-        pageHeading: 'Silvia Gosalvez' //homepage
+        pageHeading: 'Silvia Gosalvez', //homepage
       }
     },
 
@@ -54,7 +58,6 @@
       changePage(page) {
         let initialPage = this.page
         this.page = page;
-        this.pageHeading = this.page == 0 ? 'Taylor Stevens' : this.page == 1 ? 'Projects' : this.page == 2 ? 'Contact Me' : 'Unknown Page'
         this.$forceUpdate();
         console.log(`recieved page change from ${initialPage} to page ${page}`)
       },
@@ -62,6 +65,7 @@
 
     components: {
       Home,
+      Photography,
     }
   }
 </script>

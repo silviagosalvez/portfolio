@@ -1,13 +1,12 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld />
+      <WebsiteBase/>
     </v-main>
-
-    <AppFooter />
+    <AppFooter/>
   </v-app>
 </template>
 
 <script setup>
-  //
+  import WebsiteBase from './components/WebsiteBase.vue'
 </script>
