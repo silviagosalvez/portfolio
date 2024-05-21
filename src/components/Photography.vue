@@ -7,6 +7,7 @@
             lazy-src="../assets/loading_image.png"
             :key="i"
             aspect-ratio="1"
+            eager
         >
         <template v-slot:placeholder>
             <div class="d-flex align-center justify-center fill-height">
