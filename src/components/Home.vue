@@ -7,7 +7,16 @@
                     <v-card-item>
                         <v-img 
                             style="max-height: 50vh;"
-                            src="https://ams03pap002files.storage.live.com/y4m9L0H2fdkP6U524RqR8Bh7ZUgA3WNCuUf1Nmsq_PuR7ZeDE5iZgKasU7Zj6owZsVeY74YqXdcJvfIPOJsEYQ_OImvm7mETT_iq6M4DCvJgzPaDH760uUf4qMsMbVwoFbzHCB2Q_Ldf0WMjZfywSbKDVVX3EX2tfFeAP2ujCxCG1V8frc-cpTXRc8-U0slHiiBGznYOGhuspwIljGPfpzehw?encodeFailures=1&width=334&height=388">
+                            lazy-src="../assets/loading_image.png"
+                            src="https://onedrive.live.com/embed?resid=E241B47466E9E170%2172887&authkey=%21AFO2d9l_gV_NoY4&height=4012&width=3455">
+                            <template v-slot:placeholder>
+                                <div class="d-flex align-center justify-center fill-height">
+                                    <v-progress-circular
+                                    color="grey-lighten-4"
+                                    indeterminate
+                                    ></v-progress-circular>
+                                </div>
+                            </template>
                         </v-img>
                     </v-card-item>
                     <v-card-text>

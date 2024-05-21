@@ -4,7 +4,7 @@
         <v-col
             align-self="center">
             <v-card align-center align-self="center">
-                <v-card-title class="d-flex align-center">
+                <v-card-title :href="'https://ecija.com/en/'" class="d-flex align-center">
                     {{ experience.company }}
                 </v-card-title>
                 <v-card-text>
@@ -44,7 +44,7 @@ export default {
                 },
                 {
                     company: 'Meraki Smile School',
-                    title: 'Lead Marketing and Social Media Manager',
+                    title: 'Contributer to the Partnerships Department and Former Lead Marketing and Social Media Manager',
                     location: 'Madagascar (Remote)',
                     startDate: 'February 2022',
                     endDate: 'Present',
